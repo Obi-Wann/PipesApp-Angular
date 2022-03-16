@@ -1,0 +1,31 @@
+
+
+
+<div class="text-layout">
+    <h1>Pipes Números Básicos</h1>
+    <p>
+        Pipes incluídos en Angular - Usualmente incluidos en Common Module
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card header="NumberPipe"
+         subheader= 234567676.54321>
+        <i class="pi pi-dollar"></i>
+        {{ventasNetas | number:'1.2-2'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="CurrencyPipe"
+         subheader= 234567676.54321>
+        {{ventasNetas | currency:'€'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="PercentPipe"
+         subheader= 0.48>
+        {{porcentaje | percent}}
+        </p-card>
+    </div>
+</div>
